@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f0f4f7, #c9d6e3);
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .result {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #0f6edb;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0f6edb;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0c5fbe;
+        }
+
+        .btn-back {
+            background-color: #ff6f61;
+        }
+
+        .btn-back:hover {
+            background-color: #ff4b43;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Customer Satisfaction Prediction</h2>
+        <div class="result">
+            Your customer will be <strong>{{ output }}</strong>
+        </div>
+        <a href="{{ url_for('home') }}" class="btn btn-back">Back to Home</a>
+    </div>
+</body>
+
+</html>

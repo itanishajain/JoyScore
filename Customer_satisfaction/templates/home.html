@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">JoyScore</div>
+        <ul>
+            <li><a href="#landing-page">Home</a></li>
+            <li><a href="#project-description">Projects</a></li>
+            <li><a href="#profile">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing-page" id="landing-page">
+        <div class="content">
+            <h1>Project Title</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, repudiandae sunt. Repellat, fuga? Distinctio error corporis pariatur ratione dolorum voluptatibus.</p>
+            <a href="{{ url_for('project') }}" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <section class="project-description" id="project-description">
+        <div class="content">
+            <h2>Project Overview</h2>
+            <p>A comprehensive overview of the project, including goals and features.</p>
+            <div class="details">
+                <div class="detail-item">
+                    <h3>Objectives</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dicta ipsa atque molestias suscipit praesentium voluptatum consequuntur repellat excepturi. Illo?</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Features</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae illum ipsa quam in exercitationem porro laudantium cumque iste voluptatibus?</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Technologies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut magnam nam ratione amet? Odio nostrum expedita ad obcaecati incidunt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile" id="profile">
+        <div class="content">
+            <div class="profile-photo">
+                <img src="My picture.jpeg" alt="Tanisha Jain">
+            </div>
+            <div class="profile-description">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consectetur veritatis exercitationem sequi voluptate aspernatur ipsam beatae! Recusandae harum ab numquam, ipsam obcaecati veniam, perspiciatis asperiores alias, repellat suscipit consequatur dolor cumque. Accusamus eaque delectus nam quidem architecto alias numquam optio, minima a quasi fugiat cupiditate animi. Dolore quis natus corrupti tempore voluptas vel, harum quia, iusto corporis architecto quidem. Possimus quod neque minus deserunt dolor sunt velit optio inventore sed, delectus eos suscipit quibusdam, ipsa, nobis nulla dignissimos reiciendis harum. Blanditiis illum commodi ut natus! Non odit veniam consequatur nostrum similique. Repudiandae voluptatibus neque expedita, veritatis unde quidem! Doloribus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or want to get in touch, reach out through the form or links below.</p>
+            <a href="mailto:itanishajain@example.com" class="btn">Email Me</a>
+            <div class="social-links">
+                <a href="https://github.com/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
