@@ -51,11 +51,14 @@
     <section class="profile" id="profile">
         <div class="content">
             <div class="profile-photo">
-                <img src="My picture.jpeg" alt="Tanisha Jain">
-            </div>
+                <img src="{{ url_for('static', filename='My picture.jpeg') }}" alt="Tanisha Jain">
+            </div>            
             <div class="profile-description">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consectetur veritatis exercitationem sequi voluptate aspernatur ipsam beatae! Recusandae harum ab numquam, ipsam obcaecati veniam, perspiciatis asperiores alias, repellat suscipit consequatur dolor cumque. Accusamus eaque delectus nam quidem architecto alias numquam optio, minima a quasi fugiat cupiditate animi. Dolore quis natus corrupti tempore voluptas vel, harum quia, iusto corporis architecto quidem. Possimus quod neque minus deserunt dolor sunt velit optio inventore sed, delectus eos suscipit quibusdam, ipsa, nobis nulla dignissimos reiciendis harum. Blanditiis illum commodi ut natus! Non odit veniam consequatur nostrum similique. Repudiandae voluptatibus neque expedita, veritatis unde quidem! Doloribus.</p>
+                <p>Hello! I’m Tanisha Jain, a developer with experience in frontend development and a strong background in C, C++, Python, and SQL. I enjoy building innovative solutions and exploring new technologies to tackle real-world challenges.</p>
+                <p>In my free time, I love participating in tech events, learning new skills, and contributing to open-source projects. My goal is to continually enhance my expertise and apply my skills to make meaningful contributions in the tech industry.</p>
+                <p>Feel free to connect with me through my social media links or drop me an email if you have any questions or opportunities for collaboration!</p>
+
             </div>
         </div>
     </section>
@@ -63,14 +66,16 @@
     <section class="contact" id="contact">
         <div class="content">
             <h2>Contact Me</h2>
-            <p>If you have any questions or want to get in touch, reach out through the form or links below.</p>
-            <a href="mailto:itanishajain@example.com" class="btn">Email Me</a>
-            <div class="social-links">
-                <a href="https://github.com/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
-                <a href="https://linkedin.com/in/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-                <a href="https://twitter.com/itanishajain" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <p>If you have any questions or want to get in touch, feel free to reach out through the form or links below. I'm always open to new opportunities and collaborations!</p>
+            <div class="contact-details">
+                <a href="mailto:itanishajain@example.com" class="btn">Email Me</a>
+                <div class="social-links">
+                    <a href="https://github.com/itanishajain" target="_blank" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                    <a href="https://linkedin.com/in/itanishajain" target="_blank" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com/itanishajain" target="_blank" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
 </body>
 </html>

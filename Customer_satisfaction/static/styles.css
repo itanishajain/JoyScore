@@ -134,7 +134,7 @@ section {
     background: transparent; /* Remove individual section backgrounds */
 }
 
-.project-description .content, .profile .content, .contact .content {
+.project-description .content, .contact .content {
     padding: 5em 4em;
     max-width: 1200px;
     border-radius: 15px;
@@ -143,6 +143,7 @@ section {
 .project-description h2,
 .profile-description h2,
 .contact h2 {
+    align-items: center;
     font-size: 3em;
     margin-bottom: 1em;
     color: #fafafa; /* Very light gray for headings */
@@ -182,37 +183,89 @@ section {
     color: #333;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 2em;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a background color for contrast */
+}
+
+.profile .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.profile-photo {
+    flex: 1;
+    max-width: 300px; /* Adjust as needed */
+    margin-right: 2em;
+    margin-top: 7rem;
+}
+
 .profile-photo img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(246, 243, 243, 0.2);
 }
 
 .profile-description {
-    margin-top: 2em;
+    flex: 2;
+    max-width: 600px; /* Adjust as needed */
+    margin-bottom: 8rem;
 }
 
 .profile-description h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
-    color: #fff;  /* Change to white for better contrast */
+    color: #fff; /* Change to white for better contrast */
 }
 
 .profile-description p {
     font-size: 1.2em;
     color: #e0e0e0; /* Lighter gray for better readability */
+    line-height: 1.6;
+}
+
+.contact {
+    color: #e0e0e0; /* Light gray text */
+    padding: 5em 2em;
+    text-align: center;
+}
+
+.contact .content {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 9rem;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff; /* White for contrast */
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: #dcdcdc; /* Slightly lighter gray */
 }
 
 .contact .btn {
-    padding: 0.75em 2.5em;
+    padding: 1em 2.5em;
     font-size: 1.2em;
-    color: white;
+    color: #ffffff;
     background-color: #ff416c;
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     box-shadow: 0 4px 20px rgba(255, 65, 108, 0.4);
+    display: inline-block;
+    margin-bottom: 2em;
 }
 
 .contact .btn:hover {
@@ -220,21 +273,24 @@ section {
     transform: scale(1.1);
 }
 
-.social-links {
+.contact .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 1.5em;
+    gap: 15px; /* Added gap between icons */
 }
 
-.social-links img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    filter: invert(100%);
+.contact .social-links a {
+    display: inline-block;
     transition: transform 0.3s ease-in-out;
 }
 
-.social-links img:hover {
+.contact .social-links img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+.contact .social-links a:hover img {
     transform: scale(1.2);
 }
 
