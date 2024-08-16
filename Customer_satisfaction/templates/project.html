@@ -16,9 +16,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    
         <div class="container">
-            <a class="navbar-brand" href="#">Customer Satisfaction Project</a>
+            <a class="navbar-brand" href="#">SatEase</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,10 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" aria-current="page" href="{{ url_for('home') }}">Home</a>
                     </li>
                 </ul>
             </div>
@@ -137,14 +133,64 @@
 
     <style>
         body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4; /* Light grey background for the page */
-        color: #333; /* Darker text color for better readability */
-    }
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: #e0e0e0; /* Light gray for paragraphs */
+            background: url('https://www.transparenttextures.com/patterns/diagmonds.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
 
-    nav.navbar {
-        background-color: #343a40; /* Dark background for the navbar */
-    }
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(10, 20, 40, 0.8); /* Slightly darker nav background */
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f0f0f0; /* Softer white for links */
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 12px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link[aria-current="page"] {
+            color: #ffffff; /* Pure white for the active/current link */
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #ff416c;
+            transform: scale(1.05);
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2885, 85, 85, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
 
     h2 {
         margin-top: 130px;
